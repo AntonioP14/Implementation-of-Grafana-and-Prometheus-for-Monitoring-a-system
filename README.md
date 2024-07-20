@@ -21,9 +21,59 @@ This project implements a monitoring system using Docker, Prometheus, and Grafan
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+### Clone the Repository
 
-2. Docker Configuration
-Dockerfile
+## Steps to Deploy
 
-The Dockerfile sets up the environment for the Python application:
+Build and Start Services
+
+Navigate to the project directory and run:
+
+docker-compose up --build
+
+This command will build the Docker images and start the Prometheus, Grafana, and Python application services.
+2. Access Services
+
+    Prometheus: Access the web interface at http://localhost:9090.
+    Grafana: Access the web interface at http://localhost:3000 using the default credentials:
+        Username: admin
+        Password: admin
+
+3. Configure Grafana
+Add Prometheus Data Source
+
+    Open Grafana in your browser.
+    Navigate to Configuration (⚙️) -> Data Sources.
+    Click "Add data source" and select "Prometheus".
+    Set the URL to http://prometheus:9090.
+    Click "Save & Test" to verify the connection.
+
+Create a Dashboard
+
+    Click the "+" icon on the sidebar and select "Dashboard".
+    Click "Add new panel".
+    Choose "Prometheus" as the data source.
+    Enter your metric name (e.g., request_processing_seconds) in the query field.
+    Customize the panel as desired and click "Apply".
+    Save the dashboard with a descriptive name.
+
+4. Testing and Verification
+
+    Prometheus: Verify metrics collection by querying http://localhost:9090 and checking if your metrics appear.
+    Grafana: Ensure that the dashboards correctly visualize the metrics collected by Prometheus.
+
+5. Deliverables
+
+    GitHub Repository: Contains Docker, Docker Compose, Prometheus, and Grafana configurations.
+    Documentation: Detailed instructions are provided in this README.md.
+    Grafana Dashboards: Functional dashboards for metric visualization.
+    Project Code: Includes modifications to expose metrics.
+
+Additional Resources
+
+    Prometheus Documentation
+    Grafana Documentation
+
+
+
+    
