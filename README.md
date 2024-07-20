@@ -55,7 +55,7 @@ Create a Dashboard
 - Click the "+" icon on the sidebar and select "Dashboard".
 - Click "Add new panel".
 - Choose "Prometheus" as the data source.
-- Enter your metric name (e.g., request_processing_seconds) in the query field.
+- Enter your metric name (request_processing_seconds) in the query field.
 - Customize the panel as desired and click "Apply".
 - Save the dashboard with a descriptive name.
 
@@ -63,6 +63,15 @@ Create a Dashboard
 
 - Prometheus: Verify metrics collection by querying http://localhost:9090 and checking if your metrics appear.
 - Grafana: Ensure that the dashboards correctly visualize the metrics collected by Prometheus.
+
+
+## Evidences
+![Captura de pantalla 2024-07-19 192419](https://github.com/user-attachments/assets/c8541515-6359-4841-bb7f-342c0b170008)
+![Captura de pantalla 2024-07-19 192518](https://github.com/user-attachments/assets/e9978d73-ff16-4eae-b20b-87e202b42b20)
+![Captura de pantalla 2024-07-19 184316](https://github.com/user-attachments/assets/44089f6c-f59c-492d-9a20-35ad6750a818)
+
+
+
 
 
 
