@@ -29,7 +29,7 @@ This project implements a monitoring system using Docker, Prometheus, and Grafan
 
 Navigate to the project directory and run:
 
-    **docker-compose up --build**
+    docker-compose up --build
 
 This command will build the Docker images and start the Prometheus, Grafana, and Python application services.
 
